@@ -1,5 +1,6 @@
 import Spline from '@splinetool/react-spline'
 import './Home.css'
+import ErrorBoundary from '../components/ErrorBoundary';
 
 function Home() {
   return (
@@ -11,11 +12,12 @@ function Home() {
           <button className="cta-button">Get Started</button>
         </div>
         <div className="spline-container">
-          {/* Replace this URL with your actual Spline scene URL */}
-          <Spline 
-            scene="https://prod.spline.design/Dk8niESKiS0jm53f/scene.splinecode" 
-            style={{ width: '100%', height: '100%' }}
-          />
+          <ErrorBoundary>
+            <Spline 
+              scene="https://prod.spline.design/uyt7L26SAtQtEnm0/scene.splinecode" 
+              style={{ width: '100%', height: '100%' }}
+            />
+          </ErrorBoundary>
         </div>
       </section>
       
