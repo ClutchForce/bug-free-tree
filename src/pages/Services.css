@@ -1,0 +1,138 @@
+.services {
+  min-height: calc(100vh - 80px);
+}
+
+.services-hero {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.services-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #646cff 0%, #747bff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.services-hero p {
+  font-size: 1.5rem;
+  color: #888;
+}
+
+.services-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.service-card {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #646cff;
+}
+
+.service-card p {
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-card li {
+  color: #888;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.service-card li:last-child {
+  border-bottom: none;
+}
+
+.service-card li:before {
+  content: "✓ ";
+  color: #646cff;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.social-feed {
+  background-color: #1a1a1a;
+  padding: 4rem 2rem;
+}
+
+.social-feed h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.social-embeds {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.social-embed-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-embed-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #646cff;
+}
+
+.twitter-tweet {
+  margin: 0 auto !important;
+}
+
+.instagram-media {
+  margin: 0 auto !important;
+}
+
+@media (max-width: 768px) {
+  .services-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .services-hero p {
+    font-size: 1.2rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .social-embeds {
+    grid-template-columns: 1fr;
+  }
+}
